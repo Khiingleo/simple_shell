@@ -87,6 +87,6 @@ $ gcc -o shell main.c
 $ ./shell
 ```
 
-###CREATOR
+### CREATOR
 
 This shell was created by shalom Ogoziem
