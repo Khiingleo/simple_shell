@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * main - the main function for the simple shell
+ * @ac: argument count
+ * @av: argument vector
+ * @env: environment variables
+ * Return: 0 on sucess
+ */
+
 int main(int ac, char **av, char **env)
 {
 	char *line = NULL, *path_command = NULL, *path = NULL;

@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * check_path - check if command exists
+ * @path: the path
+ * @command: the command
+ * Return: the command
+ */
 
 char *check_path(char **path, char *command)
 {

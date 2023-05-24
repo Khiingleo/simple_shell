@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * _strtokenize - tokenizes a string
+ * @str: string to tokenize
+ * Return: tokenized array of strings
+ */
+
 char **_strtokenize(char *str)
 {
 	char *line_cpy, *bp, *token, **tokens;

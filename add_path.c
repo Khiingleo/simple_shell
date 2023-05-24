@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * add_path - appends a path to a command
+ * @path: the path
+ * @command: the command
+ * Return: the command
+ */
+
 char *add_path(char *path, char *command)
 {
 	char *buf;

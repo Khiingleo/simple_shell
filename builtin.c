@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * built_in - gets the built in commands
+ * @command: array of strings containing the commands
+ * @line: the command
+ * Return: 1 if true , else 0
+ */
 
 int built_in(char **command, char *line)
 {

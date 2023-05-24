@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * _env - prints the environment variables
+ */
+
 void _env(void)
 {
 	int i = 0;

@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * exec - executes command given
+ * @cp: command path
+ * @command: the command
+ */
+
 void exec(char *cp, char **command)
 {
 	pid_t pid;

@@ -1,5 +1,9 @@
 #include "main.h"
 
+/**
+ * prompt - prompts the user to imput command
+ */
+
 void prompt(void)
 {
 	if ((isatty(STDIN_FILENO) == 1) && (isatty(STDOUT_FILENO) == 1))

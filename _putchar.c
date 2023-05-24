@@ -1,9 +1,21 @@
 #include "main.h"
 
+/**
+ * _putchar - prints a char
+ * @c: to print
+ * Return: num of chars printed
+ */
+
 int _putchar(char c)
 {
 	return (write(STDOUT_FILENO, &c, 1));
 }
+
+/**
+ * _puts - prints a string
+ * @str: string to print
+ * Return: number of strings printed
+ */
 
 int _puts(char *str)
 {

@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * check_sig - checks the signal
+ * @n: int n
+ */
+
 void check_sig(int n)
 {
 	(void)n;

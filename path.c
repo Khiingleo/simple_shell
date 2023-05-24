@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * get_path - gets the path
+ * Return: the path
+ */
+
 char *get_path(void)
 {
 	int i;
