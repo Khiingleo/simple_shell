@@ -89,4 +89,4 @@ $ ./shell
 
 ### CREATOR
 
-This shell was created by shalom Ogoziem
+This shell was created by shalom Ogoziem and Akande Emmanuel
