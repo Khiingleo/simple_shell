@@ -6,7 +6,7 @@
  * @str: array of strings to pass the recieved string into
  * @n: number of bytes in str
  * @stream: where the line is gotten from
- * Returns: number of bytes read
+ * Return: number of bytes read
  */
 
 ssize_t _getline(char **str, size_t *n, FILE *stream)
