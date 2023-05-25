@@ -4,6 +4,8 @@
  * exec - executes command given
  * @cp: command path
  * @command: the command
+ *
+ * Return: executed cmd
  */
 
 void exec(char *cp, char **command)
