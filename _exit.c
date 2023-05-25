@@ -5,7 +5,7 @@
  * @command: command passed to it
  * @line: path
  *
- * Return: exits the shell
+ * Returns: Always 0
  */
 
 void my_exit(char **command, char *line)
