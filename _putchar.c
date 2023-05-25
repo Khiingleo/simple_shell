@@ -3,7 +3,7 @@
 /**
  * _putchar - prints a char
  * @c: to print
- * Return: num of chars printed
+ * Return: num of the chars printed
  */
 
 int _putchar(char c)
@@ -14,7 +14,7 @@ int _putchar(char c)
 /**
  * _puts - prints a string
  * @str: string to print
- * Return: number of strings printed
+ * Return: the number of strings printed
  */
 
 int _puts(char *str)
