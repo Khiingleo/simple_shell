@@ -3,6 +3,8 @@
 /**
  * _free - frees buff
  * @buf: to be freed
+ *
+ * Returns: always 0
  */
 
 void _free(char **buf)
