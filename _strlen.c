@@ -3,10 +3,10 @@
 /**
  * _strlen - returns the length of a string
  * @str: string to measure
- * Return: the length of the str
+ * Return: the length of str
  */
 
-int _strlen(char *str)
+int _strlen(const char *str)
 {
 	int i, len = 0;
 

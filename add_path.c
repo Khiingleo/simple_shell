@@ -1,40 +1,23 @@
 #include "main.h"
 
 /**
- * add_path - appends a path to a command
+ * add_path - concatonates the path and prog
  * @path: the path
- * @command: the command
- * Return: the command
+ * @prog: the programme
+ * Return: the full path
  */
 
-char *add_path(char *path, char *command)
+char *add_path(char *path, char *prog)
 {
-	char *buf;
-	size_t i = 0, j = 0;
+	int prog_len = 0, path_len = 0, n = 0;
 
-	if (command == 0)
-		command = "";
-	if (path == 0)
-		path = "";
-	buf = malloc(sizeof(char) * (_strlen(path) + _strlen(command) + 2));
-	if (buf == NULL)
+	path_len = _strlen(path);
+	prog_len = _strlen(prog);
+	n = sizeof(char) * (path_len + prog_len + 2);
+	path = _realloc(path, (path_len + 1), n);
+	if (path == NULL)
 		return (NULL);
-	while (path[i])
-	{
-		buf[i] = path[i];
-		i++;
-	}
-
-	if (path[i - 1] != '/')
-	{
-		buf[i] = '/';
-		i++;
-	}
-	while (command[j])
-	{
-		buf[i + j] = command[j];
-		j++;
-	}
-	buf[i + j] = '\0';
-	return (buf);
+	_strcat(path, "/");
+	_strcat(path, prog);
+	return (path);
 }

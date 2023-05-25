@@ -1,61 +1,45 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdarg.h>
 #include <string.h>
-#include <dirent.h>
-#include <libgen.h>
 #include <unistd.h>
-#include <sys/types.h>
+#include <stdlib.h>
 #include <sys/wait.h>
+#include <sys/types.h>
 #include <sys/stat.h>
-#include <time.h>
-#include <stdbool.h>
+#include <signal.h>
+#include <dirent.h>
+#include <stddef.h>
+#include <libgen.h>
 
 extern char **environ;
-extern __sighandler_t signal(int __sig, __sighandler_t __handler);
-
-int main(int ac, char **av, char **env);
-char *_strtok(char *str, const char *delim);
-char **_strtokenize(char *str);
-void prompt(void);
-char *_strchr(const char *str, int c);
-int _strncmp(char *str1, char *str2, size_t n);
-int _strlen(char *str);
-int _strcmp(char *str1, char *str2);
+int _strncmp(const char *str1, const char *str2, size_t n);
+int _strlen(const char *str);
 char *_strdup(char *str);
-void exec(char *cp, char **command);
-void check_sig(int n);
-int check(char **command, char *buf);
-char *check_path(char **path, char *command);
-char *add_path(char *path, char *command);
-int built_in(char **command, char *line);
-void my_exit(char **command, char *line);
+int _strcmp(char *str1, char *str2);
+int _atoi(char *str);
+char *_strcat(char *dest, char *src);
+int _putchar(char c);
+void _puts(char *s);
+void *_realloc(void *ptr, unsigned int o_s, unsigned int n_s);
+int input_num(char *str);
+int delim_num(char *s, char *delim);
 void _env(void);
-char *get_path(void);
-void _free(char **buf);
-ssize_t _getline(char **str, size_t *n, FILE *stream);
-char *_memcpy(char *dest, char *src, unsigned int n);
-
-struct _builtin
-{
-	char *env;
-	char *exit;
-} builtin;
-
-struct data
-{
-	int tot_exit;
-	int line_count;
-} data;
-
-struct flag
-{
-	bool is_interactive;
-} flag;
+void my_exit(char **token, char *line);
+char *handle_nl(char *s);
+char *_strchr(const char *str, int c);
+void handle_sig(int signal);
+void _help(void);
+int execmd_builtin(char **token, char *line);
+void free_env(char *env);
+void free_tok(char **token);
+int execmd(char *command, char **f);
+char *_getenv(const char *n);
+char **_strtokenize(char *str, char *delim, int n);
+char *locate(char *command);
+char *_strtok(char *str, const char *delim);
+char *add_path(char *path, char *prog);
 
 
 #endif

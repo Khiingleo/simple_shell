@@ -3,8 +3,7 @@
 /**
  * _strdup - duplicates a string
  * @str: the string to duplicate
- *
- * Return: the one duplicated string
+ * Return: the duplicated string
  */
 
 char *_strdup(char *str)

@@ -4,7 +4,7 @@
  * _strchr - searches for the first occurence of c in a string
  * @str: string to search
  * @c: character to find
- * Return: the pointer to the char found
+ * Return: pointer to the char found
  */
 
 char *_strchr(const char *str, int c)
